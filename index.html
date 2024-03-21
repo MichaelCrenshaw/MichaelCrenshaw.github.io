@@ -3,7 +3,7 @@
 <style>
     body {
         font-family: monospace;
-        font-size: 12px;
+        font-size: 13px;
         color: #222222;
         margin: 20px 10px 0 20px;
         text-align: left;
@@ -11,7 +11,7 @@
     }
     .prog-listing {
         font-family: monospace;
-        font-size: 14px;
+        font-size: 15px;
         margin: 10px 0 0 0;
     }
     h1 {
@@ -21,16 +21,32 @@
         line-height: .8em;
     }
     .subtext {
-        margin: 0 0 0 50px;
+        margin: 5px 0 5px 50px;
         width: 625px;
     }
     .doublesubtext {
-        margin: 0 0 0 70px;
+        margin: 4px 0 4px 70px;
         width: 600px;
     }
+    .doublesubtext > br {
+        display: block;
+        margin: 2px 0;
+    }
     .triplesubtext {
-        margin: 0 0 0 90px;
-        width: 525px;
+        margin: 2px 0 2px 90px;
+        width: 575px;
+    }
+    .triplesubtext > br {
+        display: block;
+        margin: 1px 0;
+    }
+    .quadsubtext {
+        margin: 1px 0 1px 110px;
+        width: 550px;
+    }
+    .quadsubtext > br {
+        display: block;
+        margin: 1px 0;
     }
     .bottomcut {
         margin-bottom: 0;
@@ -46,6 +62,24 @@
     table {
         border-spacing: 2em 0;
         margin: 0 90px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .links > div {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-block: 0;
+        height: fit-content;
+    }
+    .links > div > p {
+        width: 86px;
+        margin-block: 4px;
+    }
+    .links > div > a {
+        margin-block: auto;
     }
 </style>
 <head>
@@ -77,11 +111,21 @@
     - IT Operations Specialist - FiveStrata IT and Development, Nov. 2021 - Nov. 2022
 </p>
 <p class="triplesubtext">
-    Design and develop new projects, engaging directly with customers.<br>
-    * Add transactional CRUD logic to frameworks.<br>
-    * Developing tooling for department heads.<br>
-    * Implement specialty API support for consumers<br>
-    * Automate error-prone manual processes, reducing runtime of exports and alleviating server load.<br>
+    Design and develop new projects, engaging directly with customers.
+</p>
+<p class="quadsubtext">
+    * Add transactional CRUD logic to frameworks.
+</p>
+<p class="quadsubtext">
+    * Develop tooling for department heads.
+</p>
+<p class="quadsubtext">
+    * Implement specialty API support for consumers.
+</p>
+<p class="quadsubtext">
+    * Automate error-prone manual processes, reducing runtime of exports and alleviating server load.
+</p>
+<p class="triplesubtext">
     Manage project requests and bug reports, effectively prioritizing and implementing features.<br>
 </p>
 <p class="subtext bottomcut">
@@ -147,36 +191,52 @@
     Supported frameworks and software:
 </p>
 <p class="triplesubtext">
-    * node.js, django, actix-web<br>
+    * node.js, Nuxt.js/Vue, Next.js/React, django, actix-web<br>
     * opengl, opencl, pola.rs, pandas<br>
     * sql (mysql, mariadb, mssql), postgresql, sqlite, apache cassandra<br>
 </p>
 <p class="subtext">
-    --more
+    --links
 </p>
 <p class="doublesubtext">
     External content and additional reading available at:
 </p>
 <p class="triplesubtext">
-</p><table>
-    <tbody><tr>
-        <td>
-            * LinkedIn
-        </td>
-        <td>
-            <a href="https://www.linkedin.com/in/m-m-crenshaw/">linkedin.com/in/m-m-crenshaw/</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            * GitHub
-        </td>
-        <td>
-            <a href="https://github.com/MichaelCrenshaw">github.com/MichaelCrenshaw</a><br>
-        </td>
-    </tr>
-    </tr>
-    </tbody></table>
+</p>
+<!--<table>-->
+<!--    <tbody><tr>-->
+<!--        <td>-->
+<!--            * LinkedIn-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <a href="https://www.linkedin.com/in/m-m-crenshaw/">linkedin.com/in/m-m-crenshaw/</a><br>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            * GitHub-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <a href="https://github.com/MichaelCrenshaw">github.com/MichaelCrenshaw</a><br>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<div class="links">
+    <div class="triplesubtext">
+        <p>* GitHub</p>
+        <a href="https://github.com/MichaelCrenshaw">github.com/MichaelCrenshaw</a>
+    </div>
+    <div class="triplesubtext">
+        <p>* LinkedIn</p>
+        <a href="https://www.linkedin.com/in/m-m-crenshaw/">linkedin.com/in/m-m-crenshaw/</a>
+    </div>
+    <div class="triplesubtext">
+        <p>* Portfolio</p>
+        <a href="https://michaelcrenshaw.us/">michaelcrenshaw.us</a>
+    </div>
+</div>
+
 <p></p>
 
 <h1>FILES</h1>
